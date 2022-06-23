@@ -15,7 +15,7 @@ if (version_compare(PHP_VERSION, '7.0.0') <= 0) {
   <body>
     <div class="container-fluid">
       <div class="main">
-    <h3>DrifterCM installer</h3>
+    <h3>RVCM installer</h3>
 <?php
 if (file_exists("conf/mysql_credentials.php")) { echo "Installer has already been run on this instance. Please remove the file conf/mysql_credentials.php to run the installer again.";
     die;
@@ -65,7 +65,7 @@ if ($i === count($test_folders)) {
 // Continue the installer if data is present.
 if ( (empty($_POST['u'])) ||  (empty($_POST['p'])) || (empty($_POST['d'])) || (empty($_POST['ap'])) ) {
     echo '<pre><form role="form" method="post">
-This script will install the necessary databases for DrifterCM to operate,
+This script will install the necessary databases for RVCM to operate,
 save your credentials to <i>conf/mysql_credentials.php</i> and prepopulate
 the users with "admin" and "anonymous". If you wish to do this manually,
 you can get the necessary SQL queries from the source code of this script.
@@ -74,7 +74,7 @@ You can rerun this install script at any time to create a new database. This is
 useful is you wish to create a test database first and then later create a
 production database.
 
-Please choose a name for your database. The default is "driftercm".
+Please choose a name for your database. The default is "rvcm".
 
 <input type="checkbox" name="drop_database" value="drop"> Drop existing database. <b style="color:red;">THIS WILL DELETE YOUR DATA AND USERS.</b>
 <input type="checkbox" name="migrate_old_database" value="migrate"> Migrate tutkinta.jutut database. <b style="color:red;">THIS WILL OVERWRITE YOUR EXISTING DATABASE.</b>
@@ -82,7 +82,7 @@ Please choose a name for your database. The default is "driftercm".
 <input name="s" type="text" value="localhost"> MySQL server
 <input name="u" type="text"> MySQL username
 <input name="p" type="password"> MySQL password
-<input name="d" type="text" value="driftercm"> MySQL database
+<input name="d" type="text" value="rvcm"> MySQL database
 <input name="ap" type="password"> Create admin password
 
 <button type="submit">Install / rebuild databases</button></form></pre>
