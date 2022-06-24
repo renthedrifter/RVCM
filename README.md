@@ -14,15 +14,19 @@ You should only have to allow port 80.
 
 To test if you're web server is running you can navigate to your web servers IP in a browser.
 
-Your apache install should have created a directory in /var/www/html/ make a new directory in the html directory this will be the root of your instance of DrifterCM. You'll need to change permissions in a few directories after cloning. If you're running the web server as www-data.
+Your apache install should have created a directory in /var/www/html/ make a new directory in the html directory this will be the root of your instance of RVCM. You'll need to change permissions in a few directories after cloning. Example below if you're running the web server as www-data. You can also change the permissions of the whole directory (you might actually need to do this anyway). 
 
-sudo chown –R www-data:www-data conf 
+sudo chown –R <user>:www-data conf 
 
-sudo chown –R www-data:www-data cache 
+sudo chown –R <user>:www-data cache 
 
-sudo chown –R www-data:www-data logs 
+sudo chown –R <user>:www-data logs 
 
-Once these changes have been made you should be able to start the install process. Open a browser and navigate to the IP of your web server and name of the directory you created in html. i.e. x.x.x.x/DrifterCM/install.php
+Might also need to change the write permissions. 
+
+sudo chmod -R 777 <directory>
+
+Once these changes have been made you should be able to start the install process. Open a browser and navigate to the IP of your web server and name of the directory you created in html. i.e. x.x.x.x/rvcm/install.php
 
 MySQL
 
