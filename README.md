@@ -1,8 +1,10 @@
-RVCM is a revival of the Kirjuri project by Antti Kurittu. The intention is to update the code to be compatible with newer version of PHP. The older code works with PHP 7, if you would like to test it out you can find it on Antti's github https://github.com/AnttiKurittu/kirjuri please see security update below taken from his github page.
+RVCM is a revival of the Kirjuri project by Antti Kurittu. The intention is to update the code to be compatible with newer version of PHP and to maintain the project. The older code works with PHP 7, if you would like to test it out you can find it on Antti's github https://github.com/AnttiKurittu/kirjuri please see security update below taken from his github page.
 
-# Project UPDATE (22.6.2022)
+# Project UPDATE (25 June 2022)
 
-Working on getting RVCM to work with most recent version of PHP (8.1.2).
+RVCM should be working with the most recent version of PHP. 
+
+# Project UPDATE (22 June 2022)
 
 Requirements (so far)
 * httpd
@@ -15,6 +17,8 @@ You should only have to allow port 80.
 To test if you're web server is running you can navigate to your web servers IP in a browser.
 
 Your apache install should have created a directory in /var/www/html/ make a new directory in the html directory this will be the root of your instance of RVCM. You'll need to change permissions in a few directories after cloning. Example below if you're running the web server as www-data. You can also change the permissions of the whole directory (you might actually need to do this anyway). 
+
+Permissions below were set for testing!
 
 sudo chown –R <user>:www-data conf 
 
