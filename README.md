@@ -20,7 +20,7 @@ Your apache install should have created a directory in /var/www/html/ make a new
 
 Permissions below were set for testing!
 
-sudo chown –R <user":www-data conf 
+sudo chown –R "user":www-data conf 
 
 sudo chown –R <user>:www-data cache 
 
