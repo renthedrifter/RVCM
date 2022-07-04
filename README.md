@@ -22,7 +22,7 @@ Permissions below were set for testing!
 
 sudo chown –R "user":www-data conf 
 
-sudo chown –R <user>:www-data cache 
+sudo chown –R "user":www-data cache 
 
 sudo chown –R <user>:www-data logs 
 
